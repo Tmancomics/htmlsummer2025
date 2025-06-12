@@ -1,0 +1,62 @@
+body{
+    background-color: #F5F5DC;
+    margin: 0px;
+    padding: 20px;
+    line-height: 1.6;
+}
+h1{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+}
+h2,h3{
+    font-family: sans-serif;
+    text-align: center;
+}
+p,a,li,td,figcaption {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+header {
+    background-color: #e63946;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+header img {
+    max-width: 150px;
+    height: auto;
+}
+form {
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+form input {
+    margin: 6px 0;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer p {
+    display: flex;
+    flex-direction: column;
+}

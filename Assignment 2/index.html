@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="description" content="Assignment 2 - Pizza Form">
+    <title>Assignment 2</title>
+    <!-- Linking my html to my css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- Header will contain my logo image -->
+<header>
+    <div>
+        <figure>
+            <a href="index.html"><img src="./img/logo.png" alt="header logo"></a>
+        </figure>
+    </div>
+</header>
+    <!-- this section is used to display my heading -->
+    <section>
+        <h1>Torin's Pizza</h1>
+        <h2>Order Now!</h2>
+    </section>
+    <!-- This section is used to contain my form -->
+    <section>
+        <!-- h3 is used for order section header -->
+        <h3>↓ Begin Order Here ↓</h3>
+        <!-- Form containes all inputs for user to order a pizza -->
+        <form action="somephpfile.php" method="post" enctype="multipart/form-data">
+            <Label>Quantity?</Label>
+            <input type="number" min="1" max="99">
+            <Label>Size?</Label>
+            <input type="radio" id="small" name="size" value="Small">
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="Medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="Large">
+            <label for="large">Large</label>
+            <Label>Cheese?</Label>
+            <input type="radio" id="yes" name="cheese" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="cheese" value="No">
+            <label for="no">No</label>
+            <input type="radio" id="extra" name="cheese" value="Extra">
+            <label for="extra">Extra Cheese</label>
+            <Label>Sauce?</Label>
+            <input type="radio" id="yes1" name="sauce" value="Yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no1" name="sauce" value="No">
+            <label for="no">No</label>
+            <input type="radio" id="extra1" name="sauce" value="Extra">
+            <label for="extra">Extra Sauce</label>
+            <Label>Toppings:</Label>
+            <input type="checkbox" id="pepperoni" name="toppings" value="Pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+            <input type="checkbox" id="sausage" name="toppings" value="Sausage">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" id="bacon" name="toppings" value="Bacon">
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" id="ham" name="toppings" value="Ham">
+            <label for="ham">Ham</label>
+            <input type="checkbox" id="peppers" name="toppings" value="Peppers">
+            <label for="peppers">Peppers</label>
+            <input type="checkbox" id="mushrooms" name="toppings" value="Mushrooms">
+            <label for="mushrooms">Mushrooms</label>
+            <input type="checkbox" id="olives" name="toppings" value="Olives">
+            <label for="olives">Olives</label>
+            <input type="checkbox" id="pineapple" name="toppings" value="Pineapple">
+            <label for="pineapple">Pineapple</label>
+            <input type="checkbox" id="onion" name="toppings" value="Onion">
+            <label for="onion">Onion</label>
+            <Label>Dipping Sauces:</Label>
+            <input type="checkbox" id="garlic" name="sauces" value="Garlic">
+            <label for="garlic">Garlic sauce</label>
+            <input type="checkbox" id="buffalo" name="sauces" value="Buffalo">
+            <label for="buffalo">Buffalo sauce</label>
+            <input type="checkbox" id="ranch" name="sauces" value="Ranch">
+            <label for="ranch">Ranch sauce</label>
+            <Label>Bake:</Label>
+            <input type="radio" id="light" name="bake" value="Light">
+            <label for="light">Light bake</label>
+            <input type="radio" id="normal" name="bake" value="Normal">
+            <label for="normal">Normal bake</label>
+            <input type="radio" id="welldone" name="bake" value="WellDone">
+            <label for="welldone">Well done</label>
+            <Label>Cut:</Label>
+            <input type="radio" id="pie" name="cut" value="Pie">
+            <label for="pie">Pie cut</label>
+            <input type="radio" id="square" name="cut" value="Square">
+            <label for="square">Square cut</label>
+            <input type="radio" id="uncut" name="cut" value="Uncut">
+            <label for="uncut">Uncut</label>
+            <Label>Order Method:</Label>
+            <input type="radio" id="pickup" name="order" value="Pickup">
+            <label for="pickup">Pickup</label>
+            <input type="radio" id="delivery" name="order" value="Delivery">
+            <label for="delivery">Delivery</label>
+            <Label>Name:</Label>
+            <input type="text" name="name" required>
+            <Label>Address:</Label>
+            <input type="text" name="address" required>
+            <Label>Phone Number;</Label>
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+            <input type="submit" value="Send">
+        </form>
+    </section>
+</body>
+<!-- basic footer -->
+<footer>
+    <p>
+        <a href="index.html">Contact us</a>
+        <a href="index.html">About</a>
+    </p>
+</footer>
+</html>
