@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="description" content="Contact Page">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/loadIncludes.js"></script>
+</head>
+<body>
+<!-- Header loaded through jQuery -->
+<header id="header"></header>
+    <main>
+        <!-- Section with basic contact info -->
+        <section class="contactsection">
+            <h2>Contact Us:</h2>
+            <p>Email: support@atari.com</p>
+            <p>Phone Number: (212)-726-6586</p>
+        </section>
+        <!-- Section with form to send feedback -->
+        <section>
+            <h2>Send us your feedback or inquiries:</h2>
+            <form>
+                <label>Name:</label>
+                <input type="text" id="name" required>
+                <label>Email address:</label>
+                <input type="email" id="email" required>
+                <textarea id="message" name="user_message" placeholder="Type your message..."></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

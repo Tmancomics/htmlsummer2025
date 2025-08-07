@@ -1,0 +1,196 @@
+/* Global Content */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Content*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Content*/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header div img {
+    height: 50px;
+    padding: 0 10px;
+}
+
+header h1 {
+    margin-left: 10px;
+    font-size: 34px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0073e6;
+}
+
+/* Carousel Content */
+.carousel-wrapper {
+    margin-top: 100px;
+    position: relative;
+}
+
+
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 600px;
+}
+
+.carouselslides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    animation: slide 30s infinite; /* This defines the speed at which my carousel images scroll */
+}
+
+.carouselslide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.carouselslide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainhead {
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+.mainhead h2 {
+    font-size: 56px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 8px;
+
+}
+
+/* @keyframes slide is used to create my animation for the sliding images.
+ The transLateX slides the image across its x axis, 0% is its original position,
+  it displays the first image, at 100% it loops back to image one*/
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0); }
+}
+
+/* About Section Content */
+.aboutsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px;
+    background-color: #f8f8f8;
+    gap: 40px;
+}
+
+.aboutsection h3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.aboutsection p {
+    max-width: 500px;
+}
+
+.aboutsection img {
+    width: 700px;
+    height: auto;
+}
+
+/* Product Section Content */
+.productsection {
+    background-color: #f0f0f0;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.productsection h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.productsection div {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: top;
+}
+
+.productsection h4 {
+    margin-bottom: 10px;
+}
+
+.productsection img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.productsection img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
